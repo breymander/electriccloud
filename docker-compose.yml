@@ -2,7 +2,7 @@ version: '2'
 services:
   efserver:
     container_name: "efserver"
-    image: "ecdocker/eflow-ce-server:nightly"
+    image: "ecdocker/eflow-ce-server"
     depends_on:
       - efinsightserver
     ports:
@@ -17,6 +17,6 @@ services:
     memswap_limit: 8192m
   efinsightserver:
     container_name: "efinsightserver"
-    image: "ecdocker/eflow-ce-insightserver:nightly"
+    image: "ecdocker/eflow-ce-insightserver"
     mem_limit: 2048m
     memswap_limit: 3072m
